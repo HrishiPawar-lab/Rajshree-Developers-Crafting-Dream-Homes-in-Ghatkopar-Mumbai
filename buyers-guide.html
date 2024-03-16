@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajshree Builders</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="./static/css/aos.css" />
+    <link rel="stylesheet" href="./static/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" data-aos="-down" data-aos-duration="1200" data-aos-delay="500">
+        <div class="container-fluid px-lg-5">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./static/images/home_page/site_logo.png" class="brand-logo-image" alt="logo" />
+                    <img src="./static/images/home_page/alt_logo.png" class="brand-logo-image-alt" alt="logo" />
+                </a>
+                <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item whatsapp">
+                        <button class="menubutton">
+                            <a href="https://wa.me/919984565677/">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="menubutton menu-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                            <i class="fal fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+                <!-- </div> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- SIDE SECTION -->
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-body">
+            <div class="d-flex align-items-center justify-content-between gap-5">
+                <i class="fal fa-times ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="">
+                    <a href="./index.html" class="">Home</a>
+                </li>
+                <li class="">
+                    <a href="./about.html" class="">About Us</a>
+                </li>
+                <li>
+                    <a href="./projects.html">Projects</a>
+                </li>
+                <li class="">
+                    <a href="./awards.html" class="">Awards</a>
+                </li>
+                <li class="">
+                    <a href="./channel_partner.html" class="">Channel Partners</a>
+                </li>
+                <li class="">
+                    <a href="./career.html" class="">Careers</a>
+                </li>
+                <li class="">
+                    <a href="./contact.html" class="">Contact Us</a>
+                </li>
+                <li>
+                    <a href="./buyers-guide.html">Stamp Duty Calculator</a>
+                </li>
+                <li>
+                    <a href="./emi-calculator.html">EMI Calculator</a>
+                </li>
+            </ul>
+            <div class="sidebar-socials d-flex">
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDE SECTION -->
+
+    <!-- Hero -->
+    <section class="buyers-guide-us-banner">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="wrapper">
+                    <div class="buyers-guide-us-banner-text">
+                        <span> SELF HELP CALCULATOR </span>
+                        <h2 class="heading">
+                            Stamp Duty and <br />
+                            Registration Charges <br />
+                            Calculator
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero -->
+
+    <!-- Buyers Guide Section -->
+    <section class="section buyers-guide-section">
+        <div class="container">
+            <h2 class="heading text-center text-primary mb-5">
+                Buyer's Guide Self-Help Calculator
+            </h2>
+            <form action="#">
+                <div class="row g-3">
+                    <div class="col-lg-4">
+                        <div class="field">
+                            <label for=""> State </label>
+                            <input type="text" class="w-100" id="state" placeholder="Maharashtra" disabled />
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="field">
+                            <label for=""> Your Property Value </label>
+                            <div class="d-flex gap-3">
+                                <span class="rupee">&#8377;</span>
+                                <input type="number" min="0" id="propertyValue" class="w-100"
+                                    placeholder="Enter Your Property Value" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="field">
+                            <label for="">
+                                Stamp Duty Of Your Property
+                                <span class="fw-light"> (Stamp Duty Rate is 8%) </span>
+                            </label>
+                            <input type="text" class="w-100" placeholder="7,00,000.00" id="stampDutyValue" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="section faq">
+        <div class="container">
+            <h2 class="heading">FAQ's</h2>
+            <div class="accordion accordion-flush mt-3" id="faq-accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="dot"></span>
+                            <span> What is stamp duty </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                Every property transaction attracts a certain amount in form
+                                of tax from the buyer, which goes to the state government.
+                                This amount is known as stamp duty and registration charges.
+                                This amount is paid to get a property stamped and registered
+                                in legal records with the Government.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <span class="dot"></span>
+                            <span>
+                                What are the current Stamp duty and registration charges in
+                                Mumbai?
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                What are the current Stamp duty and registration charges in
+                                Mumbai?
+                            </p>
+                            <p class="my-2">
+                                Here is the applicable stamp duty in Maharashtra after March
+                                2021. Individuals should check the list before paying taxes as
+                                the stamp duty in Mumbai region varies as per urban areas,
+                                gram panchayat, and MMRDA as well as type of deed.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table  mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Areas in Mumbai</th>
+                                            <th scope="col">Stamp duty for Men</th>
+                                            <th scope="col">Stamp duty for Women</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Within the limits of any Urban areas</td>
+                                            <td>6% of property's market value</td>
+                                            <td>5% of property's market value</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Within any panchayat/cantonment/municipal
+                                                <br />
+                                                council of any area within MMRDA.
+                                            </td>
+                                            <td>4% of property's market value</td>
+                                            <td>3% of property's market value</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Within any gram panchayat limits</td>
+                                            <td>3% of property's market value</td>
+                                            <td>2% of property's market value</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>
+                                Here is the applicable stamp duty in Maharashtra after March
+                                2021. Individuals should check the list before paying taxes as
+                                the stamp duty in Mumbai region varies as per urban areas,
+                                gram panchayat, and MMRDA as well as type of deed.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table  mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Areas in Mumbai</th>
+                                            <th scope="col">
+                                                Stamp duty <br />
+                                                (Applicable for Men)
+                                            </th>
+                                            <th scope="col">
+                                                Stamp duty <br />
+                                                (Applicable for Women)
+                                            </th>
+                                            <th scope="col">Registration Charge</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="place-heading">Mumbai</td>
+                                            <td>6% (that includes 1% metro cess)</td>
+                                            <td>5% (that includes 1% metro cess)</td>
+                                            <td>
+                                                <p>
+                                                    For Properties above <br />
+                                                    Rs. 30 Lakh - Rs. 30,000/-
+                                                </p>
+                                                <p>
+                                                    For Properties below Rs. 30 Lakh- 1% of the property
+                                                    value
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="place-heading">Thane</td>
+                                            <td>
+                                                7% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                6% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    For Properties above <br />
+                                                    Rs. 30 Lakh - Rs. 30,000/-
+                                                </p>
+                                                <p>
+                                                    For Properties below Rs. 30 Lakh- 1% of the property
+                                                    value
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="place-heading">Navi-Mumbai</td>
+                                            <td>
+                                                7% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                6% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    For Properties above <br />
+                                                    Rs. 30 Lakh - Rs. 30,000/-
+                                                </p>
+                                                <p>
+                                                    For Properties below Rs. 30 Lakh- 1% of the property
+                                                    value
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="place-heading">Pune</td>
+                                            <td>
+                                                7% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                6% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    For Properties above <br />
+                                                    Rs. 30 Lakh - Rs. 30,000/-
+                                                </p>
+                                                <p>
+                                                    For Properties below Rs. 30 Lakh- 1% of the property
+                                                    value
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="place-heading">Pimpri-Chinchwadi</td>
+                                            <td>
+                                                7% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                6% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    For Properties above <br />
+                                                    Rs. 30 Lakh - Rs. 30,000/-
+                                                </p>
+                                                <p>
+                                                    For Properties below Rs. 30 Lakh- 1% of the property
+                                                    value
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="place-heading">Nagpur</td>
+                                            <td>
+                                                7% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                6% (that includes 1% metro cess , transport surcharge
+                                                and local body tax)
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    For Properties above <br />
+                                                    Rs. 30 Lakh - Rs. 30,000/-
+                                                </p>
+                                                <p>
+                                                    For Properties below Rs. 30 Lakh- 1% of the property
+                                                    value
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mb-2">
+                                For property sale documents, Stamp Duty Maharashtra is payable on whichever is higher-
+                                the consideration value of the property mentioned in the document or the ready reckoner
+                                rates/ circle rates that the government decides.
+                            </p>
+                            <p>
+                                Residential or agricultural property gift sales agreement transferred to family members
+                                ₹200
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <span class="dot"></span>
+                            <span>
+                                What are the factors considered for calculating stamp duty?
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>Stamp duty calculations depend on several factors:</p>
+                            <ul class="factors-list mt-2">
+                                <li>
+                                    Type of property: For example, stamp duty may differ for a
+                                    residential property compared to a commercial one.
+                                </li>
+                                <li>
+                                    Market value of the property: The property market value is
+                                    also considered while calculating the stamp value.
+                                </li>
+                                <li>
+                                    Location of the property: Stamp duty is calculated based on
+                                    the ready reckoner rates, which differ for different
+                                    locations within a given area. So, stamp duty can vary as
+                                    per the location of the property.
+                                </li>
+                                <li>
+                                    Age of the property: An old property dealing may attract
+                                    lower stamp duty as compared to a new property
+                                </li>
+                                <li>
+                                    Age of the buyer: If the buyer is a senior citizen, stamp
+                                    duty rates may be lower for them.
+                                </li>
+                                <li>
+                                    Gender of the buyer: Stamp duty rates are lower for women as
+                                    compared to men when it comes to buying property in their
+                                    name.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            <span class="dot"></span>
+                            <span>
+                                Does the buyer bear stamp duty and registration charges, or
+                                can they be included in a home loan?
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                Since stamp duty and registration are overhead expenses, they
+                                are not covered by a home loan and have to be borne by the
+                                buyer out of their pocket.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            <span class="dot"></span>
+                            <span> Is stamp duty refundable to the owner? </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                There are certain conditions under which stamp duty is
+                                refundable:
+                            </p>
+                            <ul class="factors-list mt-2">
+                                <li>
+                                    If the deal is canceled, the refund can be claimed within
+                                    two years of the registration date.
+                                </li>
+                                <li>
+                                    The original registration agreement and the original
+                                    cancellation deed must be submitted to the refund
+                                    application.
+                                </li>
+                                <li>The buyer can get up to 98% of the stamp duty paid.</li>
+                                <li>The registration charges will not be refundable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            <span class="dot"></span>
+                            <span> Does Stamp Duty include GST ? </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                No . There is no GST on Stamp Duty in Maharashtra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            <span class="dot"></span>
+                            <span> How to pay stamp duty ? </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                Stamp duty in Maharashtra can be paid in 3 different ways:
+                            </p>
+                            <ul class="factors-list mt-2">
+                                <li>
+                                    Stamp paper: Stamp duty can be paid via stamp paper, where
+                                    agreement details can be written.
+                                </li>
+                                <li>
+                                    Franking: The agreement is printed on paper and then
+                                    submitted to an authorized bank. The documents submitted can
+                                    be used to pay the stamp duty by processing them with the
+                                    help of a franking machine.
+                                </li>
+                                <li>
+                                    E-stamp: The stamp duty can be paid online via RTGS or NEFT.
+                                    It is safe and convenient.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false"
+                            aria-controls="flush-collapseEight">
+                            <span class="dot"></span>
+                            <span> Are there any Tax Benefits on stamp duty? </span>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingEight" data-bs-parent="#faq-accordion">
+                        <div class="accordion-body">
+                            <p>
+                                Under section 80C of the Income Tax Act, one can avail income
+                                tax deductions for payments against stamp duty, registration,
+                                and cess charges. However, note that the total IT deduction
+                                under Section 80C is not more than Rs 1.5 lakh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buyers Guide Section -->
+
+    <!-- LETS CONNECT SECTION -->
+    <section class="section connection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <div class="d-flex justify-content-center align-items-center gap-5">
+                        <div>
+                            <h2 class="heading">Let's Connect</h2>
+                            <p class="mt-2">
+                                We're here to help and answer your queries. We look forward to
+                                hearing from you.
+                            </p>
+                        </div>
+                        <a href="./contact.html" class="button">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LETS CONNECT SECTION -->
+
+    <section class="divider" style="padding: 6px 0"></section>
+    <!-- FOOTER -->
+    <section class="section footer">
+        <img src="./static/images/home_page/footer_bg.png" class="footer-bg" alt="" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <div class="row g-5">
+                        <div class="col-lg-4">
+                            <h2 class="heading">Meet</h2>
+                            <p class="text-center text-white">
+                                102, Integrated Karma, <br />
+                                Behind Popular Hotel, Off Hingwala Lane, <br />
+                                Ghatkopar (East), Mumbai - 400077, <br />
+                                Maharashtra, India.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h2 class="heading">Reach us</h2>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15082.261196758114!2d72.9099909!3d19.0828409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62dd0d43dc3%3A0x44ace34a93643632!2sRajshree%20Builders!5e0!3m2!1sen!2sin!4v1692181962047!5m2!1sen!2sin"
+                                width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-lg-4">
+                            <h2 class="heading">Talk</h2>
+                            <div class="d-flex talk-info align-items-center gap-3 mb-3">
+                                <i class="fas text-white fa-phone-alt"></i>
+                                <a href="tel:+91-22-21026764/7580/7761" style="font-size: 14px"
+                                    class="text-white">+91-22-21026764 &nbsp; / &nbsp; 7580/7761</a>
+                            </div>
+                            <div class="d-flex talk-info align-items-center gap-3">
+                                <i class="fas text-white fa-envelope"></i>
+                                <a href="mailto:info@rajshreebuilders.com" style="font-size: 14px"
+                                    class="text-white">info@rajshreebuilders.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between footer-points mt-4">
+                <div class="details d-flex">
+                    <a href="./site_map.html">Site Map</a>
+
+                    <a href="./terms.html">Terms and Condtions</a>
+                    <a href="./privacy_policy.html">Disclaimer</a>
+                </div>
+                <div class="social-icons d-flex gap-3">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <p class="text-center mt-3 text-white">
+                Introducing Rajshree Builders, a reputed construction company since
+                1975. Rajshree Builders now in the Fifth decade with their second
+                generation are leading Builders & Developers of Mumbai. With 40 years
+                of experience in the field of Construction, Rajshree Builders have
+                confidence and satisfaction in more than 2500 customers seeking
+                Residential, Commercial and Industrial Premises.
+            </p>
+            <p class="mt-4 copyright">
+                ©2023 Rajshree Builders. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <!-- Scripts -->
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./static/js/bootstrap.bundle.min.js"></script>
+    <!-- CDNS -->
+    <!-- Local Files (App) -->
+    <script src="./static/js/owl.carousel.js"></script>
+    <script src="./static/js/slick.min.js"></script>
+    <script src="./static/js/aos.js"></script>
+
+    <!-- Script Tag -->
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        $(".advantage-carousel").owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+
+            dots: false,
+            navText: [
+                "<i class='fal fa-chevron-left'></i>",
+                "<i class='fal fa-chevron-right'></i>",
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 1,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
+        });
+
+        $(".way-of-work-carousel").owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 30,
+            dots: false,
+            navContainer: ".owlButtons",
+            navText: [
+                "<i class='fal fa-chevron-left'></i>",
+                "<i class='fal fa-chevron-right'></i>",
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+            },
+        });
+
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 0) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+
+        // BUYERS  GUIDE PAGE
+        const propertyValue = document.querySelector("#propertyValue");
+        const stampDutyValue = document.querySelector("#stampDutyValue");
+
+        propertyValue.addEventListener("input", (e) => {
+
+            if (isNaN(e.target.value) || e.target.value < 0) {
+                alert("Please enter a valid number")
+                return
+            } else {
+                stampDutyValue.value = `${Math.abs((e.target.value) * 0.08).toFixed(2)}`
+            }
+        });
+
+
+
+
+    </script>
+</body>
+</html>

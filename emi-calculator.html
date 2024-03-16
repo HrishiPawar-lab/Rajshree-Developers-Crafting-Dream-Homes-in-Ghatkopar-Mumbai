@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajshree Builders</title>
+  <!-- Links -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="./static/css/aos.css" />
+  <link rel="stylesheet" href="./static/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./static/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="./static/css/nouislider.css" />
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./static/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" data-aos="-down" data-aos-duration="1200" data-aos-delay="500">
+    <div class="container-fluid px-lg-5">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./static/images/home_page/site_logo.png" class="brand-logo-image" alt="logo" />
+          <img src="./static/images/home_page/alt_logo.png" class="brand-logo-image-alt" alt="logo" />
+        </a>
+        <ul class="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+          <li class="nav-item whatsapp">
+            <button class="menubutton">
+              <a href="https://wa.me/919984565677/">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="menubutton menu-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+              aria-controls="offcanvasWithBackdrop">
+              <i class="fal fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+
+  <!-- SIDE SECTION -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop"
+    aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-body">
+      <div class="d-flex align-items-center justify-content-between gap-5">
+        <i class="fal fa-times ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="">
+          <a href="./index.html" class="">Home</a>
+        </li>
+        <li class="">
+          <a href="./about.html" class="">About Us</a>
+        </li>
+        <li>
+          <a href="./projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="./buyers-guide.html">Self Help Calculator</a>
+        </li>
+        <li>
+          <a href="./emi-calculator.html">EMI Calculator</a>
+        </li>
+        <li class="">
+          <a href="./awards.html" class="">Awards</a>
+        </li>
+        <li class="">
+          <a href="./channel_partner.html" class="">Channel Partners</a>
+        </li>
+        <li class="">
+          <a href="./career.html" class="">Careers</a>
+        </li>
+        <li class="">
+          <a href="./contact.html" class="">Contact Us</a>
+        </li>
+      </ul>
+      <div class="sidebar-socials d-flex">
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDE SECTION -->
+
+  <!-- Hero -->
+  <section class="emi-calculator-banner">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="wrapper">
+          <div class="emi-calculator-banner-text">
+            <span> EMI CALCULATOR.</span>
+            <h2 class="heading">
+              Know Your Monthly <br />
+              Repayments in Just a <br />
+              Few Clicks !
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero -->
+
+  <!-- Buyers Guide Section -->
+  <section class="section buyers-guide-section">
+    <div class="container">
+      <h2 class="heading text-center text-primary mb-5">EMI Calculator</h2>
+      <div class="row  g-5">
+        <div class="col-lg-8">
+          <div class="calc-card amount-card">
+            <div class="head">
+              <h5>Loan Amount</h5>
+              <h6><span>4000000</span> &#8377;</h6>
+            </div>
+            <div class="body">
+              <div class="amount-slider"></div>
+            </div>
+            <div class="foot">
+              <span>Min</span>
+              <span>Max</span>
+            </div>
+          </div>
+
+          <div class="calc-card rate-card mt-4">
+            <div class="head">
+              <h5>Interest Rate (%)</h5>
+              <h6><span>8.5</span> %</h6>
+            </div>
+            <div class="body">
+              <div class="rate-slider"></div>
+            </div>
+            <div class="foot">
+              <span>Min</span>
+              <span>Max</span>
+            </div>
+          </div>
+
+          <div class="calc-card year-card mt-4">
+            <div class="head">
+              <h5>Term (Years)</h5>
+              <h6><span>15</span> Yrs</h6>
+            </div>
+            <div class="body">
+              <div class="years-buttons-box years">
+                <button class="years-buttons-box-btn" id="1">1</button>
+                <button class="years-buttons-box-btn" id="2">2</button>
+                <button class="years-buttons-box-btn" id="3">3</button>
+                <button class="years-buttons-box-btn" id="4">4</button>
+                <button class="years-buttons-box-btn" id="5">5</button>
+                <button class="years-buttons-box-btn" id="6">6</button>
+                <button class="years-buttons-box-btn" id="7">7</button>
+                <button class="years-buttons-box-btn" id="8">8</button>
+                <button class="years-buttons-box-btn" id="9">9</button>
+                <button class="years-buttons-box-btn" id="10">10</button>
+                <button class="years-buttons-box-btn" id="11">11</button>
+                <button class="years-buttons-box-btn" id="12">12</button>
+                <button class="years-buttons-box-btn" id="13">13</button>
+                <button class="years-buttons-box-btn" id="14">14</button>
+                <button class="years-buttons-box-btn selectedYear" id="15">
+                  15
+                </button>
+                <button class="years-buttons-box-btn" id="16">16</button>
+                <button class="years-buttons-box-btn" id="17">17</button>
+                <button class="years-buttons-box-btn" id="18">18</button>
+                <button class="years-buttons-box-btn" id="19">19</button>
+                <button class="years-buttons-box-btn" id="20">20</button>
+              </div>
+            </div>
+            <div class="foot">
+              <span>Min</span>
+              <span>Max</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="calculated-value-box">
+            <span>EMI/Month</span>
+            <h3 class="sub-heading emi">₹ 0</h3>
+            <hr class="horizontal-line" />
+            <span>Principal Amount</span>
+            <h4 class="calculated-value-box-h4 principal">₹ 0</h4>
+            <hr class="horizontal-line" />
+            <div class="d-flex gap-4">
+              <div>
+                <span>Total Interest</span>
+                <h5 class="calculated-value-box-h5 interest">₹ 0</h5>
+              </div>
+              <div>
+                <span>Total Amount</span>
+                <h5 class="calculated-value-box-h5 total-amt">₹ 0</h5>
+              </div>
+            </div>
+            <hr class="horizontal-line" />
+            <div class="d-flex gap-4">
+              <div>
+                <span>Interest Rate</span>
+                <h6 class="calculated-value-box-h6 rate">0%</h6>
+              </div>
+              <div>
+                <span>Term</span>
+                <h6 class="calculated-value-box-h6 year">0 Years</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq">
+    <div class="container">
+      <h2 class="heading">FAQ's</h2>
+      <div class="accordion accordion-flush mt-3" id="faq-accordion">
+        <div class="accordion-item active">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <span class="dot"></span>
+              <span> What is stamp duty </span>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#faq-accordion">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Magni est doloribus libero provident ea ad voluptatibus quos
+                velit, eligendi laborum inventore voluptatum rerum laboriosam,
+                reprehenderit corrupti incidunt ex consequatur architecto?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <span class="dot"></span>
+              <span> When does EMI Start? </span>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#faq-accordion">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                error deleniti non recusandae sunt officiis repudiandae, rem
+                molestiae voluptate perspiciatis ipsum quibusdam voluptas
+                laborum temporibus. Vel neque quo deserunt quidem?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <span class="dot"></span>
+              <span> How can EMI be paid? </span>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#faq-accordion">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Obcaecati quod, dolore fugiat possimus id dolor! Illum
+                exercitationem architecto, debitis laudantium mollitia
+                deserunt, nihil magnam officiis nostrum ipsa quos fugiat
+                repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              <span class="dot"></span>
+              <span> What is pre-EMI interest ? </span>
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+            data-bs-parent="#faq-accordion">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                eum eveniet dolor praesentium quibusdam illum iusto repellat
+                vitae deleniti voluptates voluptatum, commodi esse et
+                necessitatibus facere, eius beatae adipisci doloribus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buyers Guide Section -->
+
+  <!-- LETS CONNECT SECTION -->
+  <section class="section connection">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <div class="d-flex justify-content-center align-items-center gap-5">
+            <div>
+              <h2 class="heading">Let's Connect</h2>
+              <p class="mt-2">
+                We're here to help and answer your queries. We look forward to
+                hearing from you.
+              </p>
+            </div>
+            <a href="./contact.html" class="button">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- LETS CONNECT SECTION -->
+
+  <section class="divider" style="padding: 6px 0"></section>
+  <!-- FOOTER -->
+  <section class="section footer">
+    <img src="./static/images/home_page/footer_bg.png" class="footer-bg" alt="" />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <h2 class="heading">Meet</h2>
+              <p class="text-center text-white">
+                102, Integrated Karma, <br />
+                Behind Popular Hotel, Off Hingwala Lane, <br />
+                Ghatkopar (East), Mumbai - 400077, <br />
+                Maharashtra, India.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <h2 class="heading">Reach us</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15082.261196758114!2d72.9099909!3d19.0828409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62dd0d43dc3%3A0x44ace34a93643632!2sRajshree%20Builders!5e0!3m2!1sen!2sin!4v1692181962047!5m2!1sen!2sin"
+                width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4">
+              <h2 class="heading">Talk</h2>
+              <div class="d-flex talk-info align-items-center gap-3 mb-3">
+                <i class="fas text-white fa-phone-alt"></i>
+                <a href="tel:+91-22-21026764/7580/7761" style="font-size: 14px" class="text-white">+91-22-21026764
+                  &nbsp; / &nbsp; 7580/7761</a>
+              </div>
+              <div class="d-flex talk-info align-items-center gap-3">
+                <i class="fas text-white fa-envelope"></i>
+                <a href="mailto:info@rajshreebuilders.com" style="font-size: 14px"
+                  class="text-white">info@rajshreebuilders.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between footer-points mt-4">
+        <div class="details d-flex">
+          <a href="./site_map.html">Site Map</a>
+
+          <a href="./terms.html">Terms and Condtions</a>
+          <a href="./privacy_policy.html">Disclaimer</a>
+        </div>
+        <div class="social-icons d-flex gap-3">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+      <p class="text-center mt-3 text-white">
+        Introducing Rajshree Builders, a reputed construction company since
+        1975. Rajshree Builders now in the Fifth decade with their second
+        generation are leading Builders & Developers of Mumbai. With 40 years
+        of experience in the field of Construction, Rajshree Builders have
+        confidence and satisfaction in more than 2500 customers seeking
+        Residential, Commercial and Industrial Premises.
+      </p>
+      <p class="mt-4 copyright">
+        ©2023 Rajshree Builders. All rights reserved.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <!-- Scripts -->
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+  <!-- CDNS -->
+  <!-- Local Files (App) -->
+  <script src="./static/js/owl.carousel.js"></script>
+  <script src="./static/js/slick.min.js"></script>
+  <script src="./static/js/aos.js"></script>
+  <script src="./static/js/nouislider.js"></script>
+  <script src="./static/js/app.js"></script>
+  <script>
+    calculateEMI();
+  </script>
+
+  <!-- Script Tag -->
+</body>
+</html>
